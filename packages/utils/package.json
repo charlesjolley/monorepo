@@ -16,7 +16,7 @@
   "browserlist": "last 2 versions, not dead",
   "dependencies": {},
   "devDependencies": {
-    "@package-name/jest": "file:../jest"
+    "@package-name/jest": "0.0.0"
   },
   "jest": {
     "preset": "@package-name/jest"
