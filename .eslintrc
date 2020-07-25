@@ -1,0 +1,26 @@
+{
+  "extends": [
+    "xo-space/esnext",
+    "xo-space/browser",
+    "xo-typescript/space",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/babel",
+    "prettier/standard",
+    "prettier/unicorn"
+  ],
+  "env": {
+    "node": true,
+    "browser": true,
+    "jest": true,
+    "worker": true,
+    "serviceworker": true
+  },
+  "ignorePatterns": ["packages/jest", "packages/*/dist"],
+  "parserOptions": {
+    "warnOnUnsupportedTypeScriptVersion": false,
+    "sourceType": "module",
+    "jsx": true,
+    "project": ["packages/*/tsconfig.json"]
+  }
+}

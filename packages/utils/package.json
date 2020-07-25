@@ -1,0 +1,22 @@
+{
+  "name": "@package-name/utils",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Charles Jolley",
+  "license": "UNLICENSED",
+  "main": "dist/cjs/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.js",
+  "source": "src/index.ts",
+  "scripts": {
+    "clean": "rimraf dist .cache",
+    "build": "tsc -b .",
+    "dev": "tsc -b . --watch"
+  },
+  "browserlist": "last 2 versions, not dead",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.0.11"
+  },
+  "jest": {}
+}

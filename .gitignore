@@ -1,0 +1,23 @@
+# Dependencies & Local Junk
+node_modules
+.env.local
+.env.*.local
+*~
+.DS_Store
+*.swp
+
+# Caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# Build & Test Output
+coverage
+build
+dist
+
+# Logfiles
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

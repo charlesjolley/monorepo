@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean:project": "rimraf **/.eslintcache **/yarn-error.log",
+    "clean:packages": "wsrun -t -m -c clean",
+    "clean:node_modules": "rimraf **/node_modules",
+    "clean": "run-s clean:packages clean:project",
+    "clean:all": "run-s clean:packages clean:project clean:node_modules",
+    "prebuild": "run-s build",
+    "build:all": "tsc -b packages/*",
+    "lint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./packages/*/src",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "dev:client": "wsrun --p @package-name/www -c dev",
+    "dev:editor": "wsrun --p @package-name/editor -c dev"
+  },
+  "jest": {
+    "projects": [
+      "<rootDir>/packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-xo-space": "^0.25.0",
+    "eslint-config-xo-typescript": "^0.31.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7",
+    "wsrun": "^5.2.1"
+  },
+  "dependencies": {}
+}

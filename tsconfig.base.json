@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    // setup project references
+    "composite": true,
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": "packages",
+    "paths": {
+      "@package-name/*": ["*/src"]
+    },
+
+    // code format and environment settings
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["dom", "dom.iterable", "es2015", "es2016", "es2017", "es2018"],
+    "jsx": "react",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "preserveConstEnums": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // type checking (mostly leave it to the linter)
+    "strict": true,
+    "skipLibCheck": true
+  }
+}

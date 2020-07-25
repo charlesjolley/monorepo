@@ -1,0 +1,10 @@
+{
+  "name": "@package-name/jest",
+  "description": "Jest preset for local packages",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "ts-jest": "^26.1.3"
+  }
+}
