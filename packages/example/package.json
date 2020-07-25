@@ -1,5 +1,5 @@
 {
-  "name": "@package-name/utils",
+  "name": "@package-name/example",
   "version": "0.0.0",
   "private": true,
   "license": "UNLICENSED",
@@ -13,7 +13,9 @@
     "dev": "tsc -b . --watch",
     "test": "jest"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@package-name/utils": "0.0.0"
+  },
   "devDependencies": {
     "@package-name/jest": "0.0.0"
   },
