@@ -16,7 +16,10 @@
   "browserlist": "last 2 versions, not dead",
   "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.0.11"
+    "@types/node": "^14.0.11",
+    "@package-name/jest": "file:../jest"
   },
-  "jest": {}
+  "jest": {
+    "preset": "@package-name/jest"
+  }
 }
